@@ -1,0 +1,59 @@
+body{
+    background: orangered;
+}
+#create-account-from{
+    width: 400px;
+    background: white;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.input-group{
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.input-group input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.input-group i{
+    position: absolute;
+    right: 5px;
+    top: 35px;
+    visibility: hidden;
+}
+.success input{
+    border: 3px solid green;
+}
+.success i.fa-check{
+    visibility: visible;
+    color: green;
+}
+.error input{
+    border: 3px solid red;
+}
+.error i.fa-circle-exclamation{
+    visibility: visible;
+    color: red;
+}
+.input-group p{
+    font-size: 15px;
+    color: red;
+    visibility: hidden;
+}
+.error p{
+    visibility: visible;
+}
+#create-account-from .btn{
+    background: chocolate;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
