@@ -5,7 +5,7 @@ const passwordInput = document.querySelector('#password');
 const confirmPasswordInput = document.querySelector('#confirm-password');
 
 form.addEventListener('submit',(event)=>{
-    event.preventDefault();
+    // event.preventDefault();
     validateForm();
 })
 function validateForm(){
