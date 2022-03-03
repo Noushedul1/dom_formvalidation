@@ -5,9 +5,23 @@ const passwordInput = document.querySelector('#password');
 const confirmPasswordInput = document.querySelector('#confirm-password');
 
 form.addEventListener('submit',(event)=>{
-    // event.preventDefault();
     validateForm();
+    if(isEmailValid() == true){
+        form.submit();
+    }else{
+        event.preventDefault();
+    }
 })
+function isFormValid(){
+    const inputContainers = form.querySelectorAll('.input-group');
+    const result = true;
+    inputContainers.forEach((container)=>{
+        if(container.classList.contains('error')){
+            result = false;
+        }
+    });
+    return result;
+}
 function validateForm(){
     // username
     if(usernameInput.value.trim()==''){
