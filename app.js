@@ -40,15 +40,17 @@ function validateForm(){
         setSuccess(passwordInput);
     }
     // confirm password 
-    if(confirmPasswordInput.value.trim()==''){
-        setError(confirmPasswordInput,'Confirm password can not be empty');
-    }
-    else if(confirmPasswordInput !== passwordInput){
-        setError(confirmPasswordInput,'Current password did not match with previous password');
-    }
-    else{
-        setSuccess(confirmPasswordInput);
-    }
+    // if(confirmPasswordInput.value.trim()==''){
+    //     setError(confirmPasswordInput,'Confirm password can not be empty');
+    //     console.log('feild is empty');
+    // }
+    // else if(confirmPasswordInput !== passwordInput){
+    //     setError(confirmPasswordInput,'Current password did not match with previous password');
+    //     console.log(`passord: ${passwordInput.value} and confirmpassword: ${confirmPasswordInput.value}`);
+    // }
+    // else{
+    //     setSuccess(confirmPasswordInput);
+    // }
 }
 function setError(element,errorMessage){
     const parent = element.parentNode;
